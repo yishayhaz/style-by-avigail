@@ -1,0 +1,22 @@
+$default: white;
+$primary: #fceddb;
+$secondary: #2c251a;
+$success: #d47859;
+
+$colors: (
+  "default": $default,
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+);
+
+@mixin colors() {
+  @each $name, $color in $colors {
+    .text-#{$name} {
+      color: $color;
+    }
+    .bg-#{$name} {
+      background-color: $color;
+    }
+  }
+}

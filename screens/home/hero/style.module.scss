@@ -1,0 +1,84 @@
+.Container {
+  min-height: calc(100vh - $header-height);
+
+  @include flex($align: stretch);
+
+  @media (max-width: 991px) {
+    flex-direction: column-reverse;
+
+    & > * {
+      width: 100% !important;
+
+      &.Image {
+        min-height: 60vh;
+      }
+
+      &.Content {
+        justify-content: flex-start;
+        text-align: center;
+      }
+    }
+  }
+
+  & > div {
+    width: 50%;
+  }
+
+  & .Image {
+    background-image: url("/img_hero.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .Content {
+    padding: 50px $page-padding-inline;
+    @include flex(
+      $dir: column,
+      $align: flex-start,
+      $justify: center,
+      $gap: 20px
+    );
+
+    h1 {
+      max-width: min(400px, 100%);
+      font-size: 4rem;
+
+      span {
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 12px;
+          right: 0;
+          height: 5px;
+          width: 80%;
+          background: $success;
+
+          border-radius: 100% 0 0 100%;
+          z-index: -1;
+
+          rotate: -2deg;
+        }
+      }
+    }
+
+    button,
+    p {
+      font-size: 18px;
+    }
+
+    button {
+      height: 50px;
+      width: 150px;
+      @include flex;
+      background: $secondary;
+      color: white;
+
+      border: none;
+
+      cursor: pointer;
+    }
+  }
+}

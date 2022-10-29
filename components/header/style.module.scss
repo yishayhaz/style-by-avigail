@@ -1,0 +1,27 @@
+.Header {
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+
+  height: $header-height;
+
+  @include flex($justify: space-between);
+
+  padding-inline: $page-padding-inline;
+
+  color: $secondary;
+  background: white;
+
+  h1 {
+    text-align: center;
+    cursor: pointer;
+  }
+
+  a {
+    color: inherit;
+
+    &:not(:hover) {
+      text-decoration: none;
+    }
+  }
+}
