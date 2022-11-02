@@ -7,7 +7,7 @@ export default function Hero() {
       <div className={styles.Container}>
         <div className={styles.Content}>
           <h1>
-            כאן נמצא הסלוגן <span>המגניב</span> שלי
+            הדרך למלתחה חכמה <span>ומשמחת</span> מתחילה כאן
           </h1>
 
           <p>
@@ -18,7 +18,6 @@ export default function Hero() {
         </div>
         <div className={styles.Image}></div>
       </div>
-      <div style={{ height: "100vh" }}></div>
     </>
   );
 }

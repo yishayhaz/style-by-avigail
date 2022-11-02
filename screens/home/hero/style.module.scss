@@ -3,36 +3,43 @@
 
   @include flex($align: stretch);
 
-  @media (max-width: 991px) {
+  @include mobile() {
     flex-direction: column-reverse;
 
-    & > * {
+    & > div {
       width: 100% !important;
+    }
 
-      &.Image {
-        min-height: 60vh;
-      }
+    & .Image {
+      height: 60vh;
+    }
 
-      &.Content {
-        justify-content: flex-start;
-        text-align: center;
+    & .Content {
+      text-align: center;
+
+      button {
+        margin-inline: auto;
       }
     }
   }
 
   & > div {
+    // flex: 1;
     width: 50%;
   }
 
   & .Image {
+    width: 50%;
     background-image: url("/img_hero.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
 
-  .Content {
-    padding: 50px $page-padding-inline;
+  & .Content {
+    box-sizing: border-box;
+    padding: 50px;
+
     @include flex(
       $dir: column,
       $align: flex-start,
@@ -40,8 +47,12 @@
       $gap: 20px
     );
 
+    h1,
+    p {
+      max-width: 700px;
+    }
+
     h1 {
-      max-width: min(400px, 100%);
       font-size: 4rem;
 
       span {
@@ -70,15 +81,27 @@
     }
 
     button {
+      position: relative;
+      isolation: isolate;
+
       height: 50px;
       width: 150px;
       @include flex;
+
+      font-weight: 500;
+      cursor: pointer;
+
       background: $secondary;
       color: white;
+      box-shadow: 0 0 2px $secondary;
 
-      border: none;
+      transition: all 0.2s;
 
-      cursor: pointer;
+      &:hover {
+        background: white;
+        color: $secondary;
+        box-shadow: 0 0 1px $secondary, 5px -5px 0 $secondary;
+      }
     }
   }
 }

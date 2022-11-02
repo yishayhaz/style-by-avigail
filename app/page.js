@@ -6,6 +6,7 @@ export default async function Page() {
     <>
       <Header />
       <Sections.Hero />
+      <Sections.Plans />
     </>
   );
 }
