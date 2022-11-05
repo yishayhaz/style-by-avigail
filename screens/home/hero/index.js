@@ -4,7 +4,7 @@ import styles from "./style.module.scss";
 export default function Hero() {
   return (
     <>
-      <div className={styles.Container}>
+      <section className={styles.Container}>
         <div className={styles.Content}>
           <h1>
             הדרך למלתחה חכמה <span>ומשמחת</span> מתחילה כאן
@@ -17,7 +17,7 @@ export default function Hero() {
           <button>בואי ונכיר!</button>
         </div>
         <div className={styles.Image}></div>
-      </div>
+      </section>
     </>
   );
 }

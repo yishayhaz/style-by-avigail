@@ -13,7 +13,7 @@ const plans = [
 
 export default function Plans() {
   return (
-    <div className={styles.Container}>
+    <section className={styles.Container}>
       {plans.map((plan, index) => (
         <div key={index} className={styles.plan}>
           <div className={styles.plan__thumbnail}>
@@ -25,6 +25,6 @@ export default function Plans() {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 }
