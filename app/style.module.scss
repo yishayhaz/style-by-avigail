@@ -1,12 +1,14 @@
 .Container {
-  width: 100vw;
-  height: 100vh;
-  scroll-snap-type: y mandatory;
-  scroll-padding-top: $header-height;
-  overflow-y: scroll;
+  @include desktop() {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: $header-height;
+    overflow-y: scroll;
 
-  & > section {
-    // height: 100%;
-    scroll-snap-align: start;
+    & > section {
+      // height: 100%;
+      scroll-snap-align: start;
+    }
   }
 }

@@ -55,6 +55,10 @@
     h1 {
       font-size: 4rem;
 
+      @include mobile() {
+        font-size: 2.7rem;
+      }
+
       span {
         position: relative;
 
