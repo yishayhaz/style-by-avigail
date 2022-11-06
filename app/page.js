@@ -7,6 +7,7 @@ export default async function Page() {
     <div className={styles.Container}>
       <Header />
       <Sections.Hero />
+      <Sections.AboutMe />
       <Sections.Plans />
     </div>
   );

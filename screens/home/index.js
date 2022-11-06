@@ -1,4 +1,5 @@
 import Hero from "./hero";
+import AboutMe from "./aboutme";
 import Plans from "./plans";
 
-export { Hero, Plans };
+export { Hero, AboutMe, Plans };

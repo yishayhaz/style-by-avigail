@@ -1,6 +1,6 @@
 .Container {
+  position: relative;
   min-height: calc(100vh - $header-height);
-
   @include flex($align: stretch);
 
   @include mobile() {
@@ -24,7 +24,6 @@
   }
 
   & > div {
-    // flex: 1;
     width: 50%;
   }
 
