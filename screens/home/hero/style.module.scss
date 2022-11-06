@@ -40,6 +40,10 @@
     box-sizing: border-box;
     padding: 50px;
 
+    @include desktop {
+      padding-inline: 100px;
+    }
+
     @include flex(
       $dir: column,
       $align: flex-start,
@@ -50,6 +54,7 @@
     h1,
     p {
       max-width: 700px;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
     h1 {
@@ -79,33 +84,8 @@
       }
     }
 
-    button,
     p {
       font-size: 18px;
-    }
-
-    button {
-      position: relative;
-      isolation: isolate;
-
-      height: 50px;
-      width: 150px;
-      @include flex;
-
-      font-weight: 500;
-      cursor: pointer;
-
-      background: $secondary;
-      color: white;
-      box-shadow: 0 0 2px $secondary;
-
-      transition: all 0.2s;
-
-      &:hover {
-        background: white;
-        color: $secondary;
-        box-shadow: 0 0 1px $secondary, 5px -5px 0 $secondary;
-      }
     }
   }
 }

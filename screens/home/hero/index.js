@@ -14,7 +14,7 @@ export default function Hero() {
             היי, אני אביגיל וברוכה הבאה לחלקת האינטרנט הקטנה שלי סטיילינג אישי,
             סדנאות, פרויקטים ועוד מינימליזם וסטיילינג עם קצת פוליטיקה
           </p>
-          <button>בואי ונכיר!</button>
+          <button className="btn">בואי ונכיר!</button>
         </div>
         <div className={styles.Image}></div>
       </section>
