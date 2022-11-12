@@ -1,0 +1,23 @@
+.Container {
+  padding: 100px $page-padding-inline;
+
+  div {
+    @include flex($dir: column);
+
+    & > * {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 42px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  form {
+    @include flex($dir: column, $gap: 20px);
+  }
+}

@@ -1,0 +1,74 @@
+.Footer {
+  background: $secondary;
+  color: white;
+
+  padding: 50px $page-padding-inline;
+
+  @include flex($justify: space-between, $align: center, $gap: 30px);
+
+  @include mobile {
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  .Socials {
+    flex: 1;
+  }
+  .AboutMe,
+  .Menu {
+    flex: 2;
+  }
+
+  &,
+  & * {
+    color: white;
+    stroke: white;
+  }
+}
+
+.AboutMe {
+  p {
+    font-size: 14px;
+    max-width: 80%;
+  }
+
+  @include mobile {
+    text-align: center;
+
+    p {
+      margin-inline: auto;
+    }
+  }
+}
+
+.Menu {
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: 10px;
+
+      a {
+        @include flex($justify: flex-start, $align: center, $gap: 10px);
+
+        &:not(:hover) {
+          text-decoration: none;
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.Socials {
+  @include flex($gap: 30px);
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}

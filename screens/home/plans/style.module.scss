@@ -1,6 +1,6 @@
 .Container {
   min-height: 100vh;
-  padding: 150px $page-padding-inline;
+  padding: 50px $page-padding-inline;
 
   @include flex($dir: column, $gap: 50px);
 }
@@ -12,10 +12,8 @@
 
   @include desktop {
     cursor: pointer;
-    transition: scale 0.25s;
 
     &:hover {
-      scale: 1.05;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
         rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     }
@@ -32,8 +30,12 @@
     @include flex($justify: space-between, $align: stretch, $gap: 50px);
 
     @include mobile {
-      flex-direction: column;
+      flex-direction: column !important;
       gap: 10px;
+
+      button {
+        margin-inline: auto;
+      }
     }
 
     &__thumbnail {

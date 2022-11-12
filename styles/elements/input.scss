@@ -1,0 +1,45 @@
+.input,
+.input-button,
+.select {
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 5px;
+
+  outline: none;
+  border: 1px solid gray;
+  font-size: 18px;
+}
+
+.input {
+  &:focus {
+    box-shadow: 0 0 4px rgba(black, 0.25);
+  }
+}
+
+.input-button {
+  @include flex($gap: 10px);
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  cursor: pointer;
+
+  background-color: $secondary;
+  border: 2px solid $secondary;
+  color: white;
+
+  font-weight: 500;
+
+  &:hover {
+    text-shadow: 0 0 4px rgba(white, 0.5);
+    box-shadow: 0 0 4px rgba(black, 0.5);
+  }
+
+  &:disabled {
+    cursor: no-drop;
+    background: white;
+    color: $secondary;
+  }
+}
