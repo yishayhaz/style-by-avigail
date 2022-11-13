@@ -31,16 +31,7 @@ export default function Plans() {
             ></div>
             <div className={styles.plan__content}>
               <h2>{plan.title}</h2>
-              <p>
-                {plan.description.slice(20)}
-                <br />
-                {plan.description.slice(30)}
-                <br />
-                {plan.description.slice(15)}
-                <br />
-                {plan.description}
-                <br />
-              </p>
+              <p>{plan.description}</p>
               <button className="btn">עוד פרטים</button>
             </div>
           </div>
