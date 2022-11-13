@@ -5,8 +5,8 @@ export default function AboutMe() {
   return (
     <section className={styles.Container}>
       <article>
-        <img src="/img_hero.jpeg" alt="Hero" />
-        <h2>סטייליסטית אישית</h2>
+        <img src="/me.jpg" alt="Hero" />
+        <h2>מי אני?</h2>
         <p>
           {" "}
           קוראים לי אביגיל חזן ואני עוסקת בסטיילינג אישי, בהעברת סדנאות סטיילינג

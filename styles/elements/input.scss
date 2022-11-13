@@ -1,5 +1,6 @@
 .input,
 .input-button,
+.textarea,
 .select {
   padding: 10px 20px;
   width: 100%;
@@ -14,6 +15,11 @@
   &:focus {
     box-shadow: 0 0 4px rgba(black, 0.25);
   }
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 200px;
 }
 
 .input-button {

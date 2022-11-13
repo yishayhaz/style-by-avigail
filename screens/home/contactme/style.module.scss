@@ -1,5 +1,11 @@
 .Container {
   padding: 100px $page-padding-inline;
+  min-height: calc(100vh - $header-height);
+  @include flex($dir: column);
+
+  & > * {
+    width: 100%;
+  }
 
   div {
     @include flex($dir: column);

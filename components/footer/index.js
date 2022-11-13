@@ -35,7 +35,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/contact-me">
                 <AiOutlineDingtalk />
                 יצירת קשר
               </a>
@@ -43,13 +43,16 @@ export default function Footer() {
           </ul>
         </nav>
         <nav className={styles.Socials}>
-          <a href="https://www.instagram.com/avigailhazan/">
+          <a href="https://www.instagram.com/avigailhaz/" target="_blank">
             <BsInstagram />
           </a>
-          <a href="https://www.facebook.com/avigailhazan">
+          <a href="https://www.facebook.com/abi.hazan.3" target="_blank">
             <BsFacebook />
           </a>
-          <a href="https://www.linkedin.com/in/avigailhazan/">
+          <a
+            href="https://api.whatsapp.com/send/?phone=972544661543"
+            target="_blank"
+          >
             <BsWhatsapp />
           </a>
         </nav>

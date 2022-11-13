@@ -10,6 +10,8 @@
       height: 250px;
       border-radius: 40% 40% 40% 40% / 40% 40% 40% 40%;
 
+      object-fit: cover;
+
       box-shadow: 0 0 3px $secondary;
     }
 
