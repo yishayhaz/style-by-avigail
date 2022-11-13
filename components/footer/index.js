@@ -2,7 +2,6 @@ import styles from "./style.module.scss";
 
 import { BsWhatsapp } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
-import { BsFacebook } from "react-icons/bs";
 
 import { GrWorkshop } from "react-icons/gr";
 import { MdOutlinePersonalInjury } from "react-icons/md";
@@ -45,9 +44,6 @@ export default function Footer() {
         <nav className={styles.Socials}>
           <a href="https://www.instagram.com/avigailhaz/" target="_blank">
             <BsInstagram />
-          </a>
-          <a href="https://www.facebook.com/abi.hazan.3" target="_blank">
-            <BsFacebook />
           </a>
           <a
             href="https://api.whatsapp.com/send/?phone=972544661543"
