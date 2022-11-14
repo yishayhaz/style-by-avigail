@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./style.module.scss";
 import Link from "next/link";
 import { CgMenuRight } from "react-icons/cg";
@@ -25,6 +25,18 @@ const routes = [
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isMenuOpen]);
 
   return (
     <>
