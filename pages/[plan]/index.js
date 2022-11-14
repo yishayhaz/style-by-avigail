@@ -7,7 +7,7 @@ import ReactMarkdown from "react-markdown";
 const plans = {
   workshops: {
     thumbnail: "/me.jpg",
-    title: `סדנאות סטיילינג`,
+    title: `סדנאות`,
     description: `
 סטיילינג אישי מורכב מכמה חלקים ואפשרויות:
 

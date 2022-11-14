@@ -80,7 +80,7 @@
     rgba(0, 0, 0, 0.9)
   );
   @include flex($dir: column);
-  padding-block: 50px;
+  padding-block: 100px;
 
   button {
     background: white;
