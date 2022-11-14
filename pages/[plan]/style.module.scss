@@ -1,0 +1,13 @@
+.Container {
+  min-height: calc(100vh - $header-height);
+  padding: 100px $page-padding-inline;
+
+  .BtnContainer {
+    margin-top: 35px;
+    @include flex;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
