@@ -16,7 +16,9 @@ export default function Hero() {
             כאן תמצאי כל מה שאת צריכה כדי להתלבש נכון ולהרגיש במיטבך. מלתחה
             חכמה, סטיילינג אישי וסדנאות סטיילינג לכל גיל.
           </p>
-          <button className="btn">בואי ונכיר!</button>
+          <a className="btn" href="#aboutme">
+            בואי ונכיר!
+          </a>
         </div>
         <div className={styles.Image}></div>
       </section>

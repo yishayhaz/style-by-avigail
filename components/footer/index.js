@@ -13,11 +13,7 @@ export default function Footer() {
       <footer className={styles.Footer}>
         <div className={styles.AboutMe}>
           <h2>אביגיל חזן - סטייליסטית אישית</h2>
-          <p>
-            קוראים לי אביגיל חזן ואני עוסקת בסטיילינג אישי, בהעברת סדנאות
-            סטיילינג לנשים וביצירת תוכן במדיה. בסטיילינג אני מגשימה את החלום
-            והתשוקה לעסוק באופנה ו"לשחק
-          </p>
+          <p>הדלת למלתחה חכמה ומשמחת נפתחת כאן</p>
         </div>
         <nav className={styles.Menu}>
           <ul>

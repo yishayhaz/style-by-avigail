@@ -14,9 +14,13 @@
 
   box-shadow: 0 0 5px $secondary;
 
-  h1 {
-    text-align: center;
-    cursor: pointer;
+  & > a {
+    color: $secondary;
+    text-decoration: none;
+    h1 {
+      text-align: center;
+      cursor: pointer;
+    }
   }
 }
 

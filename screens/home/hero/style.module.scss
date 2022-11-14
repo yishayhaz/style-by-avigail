@@ -16,10 +16,6 @@
 
     & .Content {
       text-align: center;
-
-      button {
-        margin-inline: auto;
-      }
     }
   }
 
@@ -54,6 +50,10 @@
     p {
       max-width: 700px;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    a {
+      text-decoration: none;
     }
 
     h1 {

@@ -51,7 +51,9 @@ export default function Header() {
         <button className={styles.MenuBtn} onClick={() => setIsMenuOpen(true)}>
           <CgMenuRight />
         </button>
-        <h1>Style By Avigail</h1>
+        <Link href="/">
+          <h1>Style By Avigail</h1>
+        </Link>
       </header>
     </>
   );

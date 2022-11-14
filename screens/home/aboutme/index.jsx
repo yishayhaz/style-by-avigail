@@ -3,7 +3,7 @@ import { BubleSvg } from "../../../svgs";
 
 export default function AboutMe() {
   return (
-    <section className={styles.Container}>
+    <section className={styles.Container} id="aboutme">
       <article>
         <center>
           <img src="/me.jpg" alt="Hero" />
