@@ -17,6 +17,10 @@
     & .Content {
       text-align: center;
     }
+
+    a {
+      margin-inline: auto;
+    }
   }
 
   & > div {
@@ -56,8 +60,12 @@
       text-decoration: none;
     }
 
+    p {
+      font-size: 21px;
+    }
+
     h1 {
-      font-size: 4rem;
+      font-size: 3.2rem;
 
       @include mobile() {
         font-size: 2.7rem;
@@ -81,10 +89,6 @@
           rotate: -2deg;
         }
       }
-    }
-
-    p {
-      font-size: 18px;
     }
   }
 }
