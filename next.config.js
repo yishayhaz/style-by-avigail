@@ -4,6 +4,10 @@ const nextConfig = {
   sassOptions: {
     additionalData: `@use "styles" as *;`,
   },
+  i18n: {
+    locales: ["he"],
+    defaultLocale: "he",
+  },
 };
 
 module.exports = nextConfig;

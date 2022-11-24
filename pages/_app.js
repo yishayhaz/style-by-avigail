@@ -16,6 +16,12 @@ function MyApp({ Component, pageProps }) {
         />
         <meta property="og:image" itemprop="image" content="/img_hero.jpeg" />
         <meta property="og:type" content="website" />
+
+        <meta
+          property="description"
+          content="הי, ברוכה הבאה!
+כאן תמצאי כל מה שאת צריכה כדי להתלבש נכון ולהרגיש במיטבך. מלתחה חכמה, סטיילינג אישי וסדנאות סטיילינג לכל גיל. בואו נכיר"
+        />
       </Head>
       <Component {...pageProps} />
     </>

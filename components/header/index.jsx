@@ -51,6 +51,7 @@ export default function Header() {
       <header className={styles.Header}>
         <button className={styles.MenuBtn} onClick={() => setIsMenuOpen(true)}>
           <CgMenuRight />
+          <div className="sr-only">Menu</div>
         </button>
         <Link href="/">
           <img src={"/logo.jpg"} alt="logo" />
