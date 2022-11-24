@@ -4,6 +4,7 @@ import styles from "./style.module.scss";
 import Link from "next/link";
 import { CgMenuRight } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
+import Image from "next/image";
 
 const routes = [
   {
@@ -52,7 +53,7 @@ export default function Header() {
           <CgMenuRight />
         </button>
         <Link href="/">
-          <h1>Style By Avigail</h1>
+          <img src={"/logo.jpg"} alt="logo" />
         </Link>
       </header>
     </>

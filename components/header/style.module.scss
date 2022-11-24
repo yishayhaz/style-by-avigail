@@ -17,9 +17,9 @@
   & > a {
     color: $secondary;
     text-decoration: none;
-    h1 {
-      text-align: center;
-      cursor: pointer;
+
+    img {
+      height: calc($header-height - 20px);
     }
   }
 }

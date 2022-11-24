@@ -2,7 +2,7 @@ import Form from "../../../components/form";
 import styles from "./style.module.scss";
 import { useState } from "react";
 
-export default function ContactMe() {
+export default function ContactMe({ subject }) {
   const [form, setForm] = useState([
     {
       type: "text",
@@ -12,7 +12,7 @@ export default function ContactMe() {
     {
       type: "select",
       name: "subject",
-      value: "כללי",
+      value: subject || "כללי",
       options: [
         { value: "סטיילינג אישי" },
         { value: "סדנאות" },
@@ -40,10 +40,7 @@ export default function ContactMe() {
     <section className={styles.Container}>
       <div>
         <h2>יצירת קשר</h2>
-        <p>
-          נשמח לשמוע מכם ולענות על כל שאלה. אנא מלאו את הטופס ונחזור אליכם
-          בהקדם.
-        </p>
+        <p>מעוניינת לשמוע עוד? מלאי את הפרטים ואחזור אלייך בהקדם.</p>
       </div>
       <br />
       <br />

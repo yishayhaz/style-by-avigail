@@ -28,7 +28,7 @@
   }
 
   & .Image {
-    width: 50%;
+    max-width: 50%;
     background-image: url("/img_hero.jpeg");
     background-repeat: no-repeat;
     background-size: cover;

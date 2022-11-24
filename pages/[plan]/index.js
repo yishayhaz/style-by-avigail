@@ -3,6 +3,7 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import styles from "./style.module.scss";
 import ReactMarkdown from "react-markdown";
+import { ContactMe } from "../../screens/home";
 
 const plans = {
   workshops: {
@@ -88,6 +89,7 @@ export default function Plan({ plan }) {
           </a>
         </div>
       </section>
+      <ContactMe subject={plan.title} />
       <Footer />
     </>
   );
