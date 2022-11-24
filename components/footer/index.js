@@ -40,14 +40,14 @@ export default function Footer() {
         <nav className={styles.Socials}>
           <a href="https://www.instagram.com/avigailhaz/" target="_blank">
             <BsInstagram />
-            <div className="sr-only">Instagram</div>
+            <span className="sr-only">Instagram</span>
           </a>
           <a
             href="https://api.whatsapp.com/send/?phone=972544661543"
             target="_blank"
           >
             <BsWhatsapp />
-            <div className="sr-only">WhatsApp</div>
+            <span className="sr-only">WhatsApp</span>
           </a>
         </nav>
       </footer>
