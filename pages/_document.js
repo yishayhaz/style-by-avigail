@@ -13,7 +13,7 @@ export default function Document() {
           content="הי, ברוכה הבאה!
 כאן תמצאי כל מה שאת צריכה כדי להתלבש נכון ולהרגיש במיטבך. מלתחה חכמה, סטיילינג אישי וסדנאות סטיילינג לכל גיל. בואו נכיר"
         />
-        <meta property="og:image" itemprop="image" content="/img_hero.jpeg" />
+        <meta property="og:image" itemprop="image" content="/img_hero.webp" />
         <meta property="og:type" content="website" />
 
         <meta
