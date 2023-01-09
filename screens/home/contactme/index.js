@@ -33,7 +33,7 @@ export default function ContactMe({ subject }) {
     הודעה: ${form[2].value}
     `;
 
-    window.open(`https://wa.me/972546144870?text=${message}`, "_blank");
+    window.open(`https://wa.me/972544661543?text=${message}`, "_blank");
   };
 
   return (
