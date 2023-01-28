@@ -28,9 +28,11 @@ export default function ContactMe({ subject }) {
 
   const onSubmit = (form) => {
     const message = `
-    היי! אני ${form[0].value} ואני מעוניינת לקבל עוד מידע על ${form[1].value}.
+    היי! אני ${form[0].value || "אנונימית"} ואני מעוניינת לקבל עוד מידע על ${
+      form[1].value
+    }.
     ${" ".repeat(96)}
-    הודעה: ${form[2].value}
+    הודעה: ${form[2].value || "<הודעה ריקה>"}
     `;
 
     window.open(`https://wa.me/972544661543?text=${message}`, "_blank");
@@ -40,7 +42,7 @@ export default function ContactMe({ subject }) {
     <section className={styles.Container}>
       <div>
         <h2>יצירת קשר</h2>
-        <p>מעוניינת לשמוע עוד? מלאי את הפרטים ואחזור אלייך בהקדם.</p>
+        <p>מעוניינת לשמוע עוד? מלאי את הפרטים ואחזור אלייך בהקדם!</p>
       </div>
       <br />
       <br />
