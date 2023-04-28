@@ -11,9 +11,14 @@
   "dependencies": {
     "next": "13.0.3",
     "react": "18.2.0",
+    "react-beautiful-carousel": "^0.5.3",
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
     "react-markdown": "^8.0.3",
     "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.16.2",
+    "typescript": "5.0.4"
   }
 }

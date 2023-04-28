@@ -2,7 +2,7 @@
   @include desktop() {
     width: 100vw;
     height: 100vh;
-    scroll-snap-type: y mandatory;
+    // scroll-snap-type: y mandatory;
     scroll-padding-top: $header-height;
     overflow-y: scroll;
     scroll-behavior: smooth;

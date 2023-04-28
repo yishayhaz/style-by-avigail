@@ -2,7 +2,7 @@ import Form from "../../../components/form";
 import styles from "./style.module.scss";
 import { useState } from "react";
 
-export default function ContactMe({ subject }) {
+export default function ContactMe({ subject = "" }) {
   const [form, setForm] = useState([
     {
       type: "text",
