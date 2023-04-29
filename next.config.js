@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    transpilePackages: ["react-beautiful-carousel"],
+  },
   reactStrictMode: true,
   sassOptions: {
     additionalData: `@use "styles" as *;`,
