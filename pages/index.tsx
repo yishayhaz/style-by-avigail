@@ -12,6 +12,7 @@ export default function Page() {
       <Sections.AboutMe />
       <Sections.Plans />
       <Sections.Reviews reviews={reviews["reviews"]} />
+      <Sections.IgScreen />
       <Sections.ContactMe />
       <Footer />
     </div>

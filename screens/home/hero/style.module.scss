@@ -29,10 +29,10 @@
 
   & .Image {
     width: 50%;
-    background-image: url("/img_hero.webp");
+    background-image: url("/IG/1.avif");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top center;
   }
 
   & .Content {
@@ -49,6 +49,14 @@
       $justify: center,
       $gap: 20px
     );
+
+    h1 {
+      line-height: 1em;
+
+      @include mobile() {
+        font-size: 2.5rem !important;
+      }
+    }
 
     h1,
     p {
@@ -69,25 +77,6 @@
 
       @include mobile() {
         font-size: 2.7rem;
-      }
-
-      span {
-        position: relative;
-
-        &:after {
-          content: "";
-          position: absolute;
-          bottom: 12px;
-          right: 0;
-          height: 5px;
-          width: 80%;
-          background: $success;
-
-          border-radius: 100% 0 0 100%;
-          z-index: -1;
-
-          rotate: -2deg;
-        }
       }
     }
   }

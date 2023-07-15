@@ -33,7 +33,7 @@ export default function AboutMe() {
         </p>
         <br />
         <center className={styles.welcome}>
-          <BubleSvg />
+          {/* <BubleSvg /> */}
           <span>!Welcome</span>
         </center>
       </article>

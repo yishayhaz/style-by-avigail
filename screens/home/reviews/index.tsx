@@ -13,7 +13,7 @@ export function Reviews({ reviews }: ReviewsProps) {
       <div className={styles.reviews}>
         <Carousel showDots>
           {reviews.map((review, idx) => (
-            <CarouselItem className={styles.review}>
+            <CarouselItem key={idx} className={styles.review}>
               <Review key={idx} {...review} />
             </CarouselItem>
           ))}
