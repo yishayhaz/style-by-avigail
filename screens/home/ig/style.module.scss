@@ -1,5 +1,5 @@
 .ig {
-  padding: 50px $page-padding-inline;
+  padding: 50px $page-padding-inline 0 $page-padding-inline;
 
   display: flex;
   flex-direction: column;
@@ -41,9 +41,9 @@
       }
 
       img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: cover;
+        width: 100%;
+        height: auto;
+        // object-fit: cover;
       }
     }
   }
