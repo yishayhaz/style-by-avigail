@@ -1,5 +1,4 @@
 import styles from "./style.module.scss";
-import { BubleSvg } from "../../../svgs";
 
 export default function AboutMe() {
   return (
@@ -10,7 +9,6 @@ export default function AboutMe() {
           <h2>מי אני?</h2>
         </center>
         <p>
-          {" "}
           קוראים לי אביגיל חזן ואני עוסקת בסטיילינג אישי, בהעברת סדנאות סטיילינג
           לנשים וביצירת תוכן במדיה.
           <br />

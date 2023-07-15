@@ -39,7 +39,7 @@ export default function ContactMe({ subject = "" }) {
   };
 
   return (
-    <section className={styles.Container}>
+    <section className={styles.Container} id="contact">
       <div>
         <h2>יצירת קשר</h2>
         <p>מעוניינת לשמוע עוד? מלאי את הפרטים ואחזור אלייך בהקדם!</p>

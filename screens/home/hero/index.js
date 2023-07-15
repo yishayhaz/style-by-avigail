@@ -10,7 +10,6 @@ export default function Hero() {
           <h1>
             הדלת למלתחה <span>חכמה</span> נפתחת כאן
           </h1>
-
           <p>
             הי, ברוכה הבאה!
             <br />
