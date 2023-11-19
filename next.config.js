@@ -8,8 +8,8 @@ const nextConfig = {
     additionalData: `@use "styles" as *;`,
   },
   i18n: {
-    locales: ["he"],
     defaultLocale: "he",
+    locales: ["he"],
   },
   typescript: {
     ignoreBuildErrors: true,
