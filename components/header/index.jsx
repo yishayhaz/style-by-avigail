@@ -4,7 +4,6 @@ import styles from "./style.module.scss";
 import Link from "next/link";
 import { CgMenuRight } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
-import Image from "next/image";
 
 const routes = [
   {

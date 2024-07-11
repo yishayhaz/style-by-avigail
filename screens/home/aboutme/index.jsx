@@ -5,7 +5,7 @@ export default function AboutMe() {
     <section className={styles.Container} id="aboutme">
       <article>
         <center>
-          <img src="/hero.jpeg" alt="Hero" />
+          <img src="/me-gray.jpeg" alt="Hero" />
           <h2>מי אני?</h2>
         </center>
         <p>
